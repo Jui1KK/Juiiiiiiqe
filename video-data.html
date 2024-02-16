@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aew neur kan ter</title>
+
+  <link rel="stylesheet" href="video.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__logo">
+      <img src="https://cdn.discordapp.com/attachments/1139258261980332103/1205127680983306280/0m4Wrh1QHMAAAAASUVORK5CYII.png?ex=65d73d9d&is=65c4c89d&hm=603fcc750b5f63bd8e93a2aa51cb5f11eab1d1324627ee264de3e4504a80babc&" alt="1" width="200" height="auto">
+    </div><!--<div
+    <div class="nav__logo"><span>Aew neur kan ter</span></div>
+    <input type="checkbox" id="check">
+    <label for="check" class="nav__hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </label>-->
+    
+
+    <ul class="nav__links">
+      <li class="nav__link"><a href="#">หน้าหลัก</a></li>
+      <li class="nav__link"><a href="#">ที่เที่ยว</a></li>
+      <li class="nav__link"><a href="#">ที่พัก</a></li>
+      <li class="nav__link"><a href="#">ร้านอาหาร</a></li>
+      <li class="nav__link"><a href="#">วิดิโอแนะนำ</a></li>
+    </ul>
+    <div class="search_container">
+        <input type="text" placeholder="ค้นหา..." class="search-input">
+          <button type="submit" class="search-button">
+            <i class="fa fa-search"></i>
+          </button>
+      </div>
+  </nav>
+  <!--รอใส่ข้อมูลเพิ่มเติม-->
+  </div>
+  <div class="slideshow">
+    <div class="items">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8MTkyMHgxMDgwfGVufDB8fDB8fHww" alt="img1">
+    </div>
+    <div class="items">
+      <img src="https://images.unsplash.com/photo-1563089145-599997674d42?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MTkyMHgxMDgwfGVufDB8fDB8fHww" alt="img2">
+    </div>
+    <div class="items">
+      <img src="https://images.unsplash.com/photo-1511300636408-a63a89df3482?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fDE5MjB4MTA4MHxlbnwwfHwwfHx8MA%3D%3D" alt="img3">
+    </div>
+    <div class="items">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fDE5MjB4MTA4MHxlbnwwfHwwfHx8MA%3D%3D" alt="img4">
+    </div>
+  </div>
+  
+  <script>
+    $(document).ready(() => {
+    $('.slideshow').slick({
+      dots: true
+    });
+    $(".slideshow .slick-prev").html('<i class="fas fa-arrow-left"></i>');
+    $(".slideshow .slick-next").html('<i class="fas fa-arrow-right"></i>');
+    $(".slideshow .slick-dots li").html('');
+    
+});
+  </script>
+  <!--รอใส่ข้อมูลเพิ่มเติม-->
+  <div class="box_background">
+  <div class="container">
+    <h1> ชื่อจังหวัด </h1>
+    <div class="eiei">
+    <img src="https://s359.kapook.com/r/600/auto/pagebuilder/52ce3932-69b4-4a90-8410-bf64c521b689.jpg"width="1112"height="685.812">
+    </div>
+  <div class="auto-wrap">
+    <h1>วัดพระธาตุผาซ่อนแก้ว </h1><br>
+    <h2>วัดพระธาตุผาซ่อนแก้ว ตั้งอยู่ตำบลแคมป์สน อำเภอเขาค้อ จ.เพชรบูรณ์ เป็นสถานที่อันเป็นธรรมภูมิที่งดงาม รายล้อมด้วยทิวเขาสูงสลับซับซ้อน ความโดดเด่นของวัดพระธาตุผาซ่อนแก้ว คือ ความงดงามของของเจดีย์ และลวดลายการตกแต่งด้วยถ้วยกระเบื้องหินสีต่างๆ ที่งดงามแปลกตา รวมทั้งองค์พระพุทธรูปสีขาว ประดิษฐานเรียงกัน 5 องค์ มองเห็นโดดเด่นแต่ไกล ในยามเช้าสามารถเห็นสายหมอกที่ลอยผ่านไปรอบตัววัด เป็นภาพที่งดงามดุจ สวงสวรรค์</h2>
+    <div class="eiei">
+    <img src="https://www.paiduaykan.com/travel/wp-content/uploads/2020/04/DSC08795-800x534.jpg"width="1112"height="685.812">
+    </div>
+    <br>
+    <H2>เบอร์ติดต่อ 054227653</H2>
+    <div class="maps">
+    <p20>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.7292442018015!2d101.04838847617809!3d16.790140983998693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31204347c0cca891%3A0xea28cf0075b52c82!2z4Lin4Lix4LiU4Lie4Lij4Liw4LiY4Liy4LiV4Li44Lic4Liy4LiL4LmI4Lit4LiZ4LmB4LiB4LmJ4Lin!5e0!3m2!1sth!2sth!4v1707501650079!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>วัดพระธาตุผาซ่อนแก้ว</h2>
+    </div>
+    </p20>
+  </div>
+  </div>
+</div>
+  <!--รอใส่ข้อมูลเพิ่มเติม-->
+  <footer class="footer">
+    <div class="container1">
+      <div class="row">
+        <div class="footer-col">
+          <img src="https://cdn.discordapp.com/attachments/1139258261980332103/1205127680983306280/0m4Wrh1QHMAAAAASUVORK5CYII.png?ex=65d73d9d&is=65c4c89d&hm=603fcc750b5f63bd8e93a2aa51cb5f11eab1d1324627ee264de3e4504a80babc&" alt="logo" width="300" height="">
+        </div>
+        <div class="footer-col">
+          <p1>แนะนำที่ท่องเที่ยวเหนือ อากาศดี ทิวทัศน์งามธรรมชาติสมบูรณ์ เหมาะเป็นที่พักกายพักใจสำหรับคนที่ต้องการ พักจากความเหนื่อยล้าเพื่อมาเติมพลังกายและใจ</p1>
+        </div> 
+        <div class="footer-col">
+          <h4>ช่องทางติดต่อ</h4>
+          <ul>
+            <li><a href="#">เบอร์ติดต่อ</a></li>
+            <li><a href="https://www.google.co.th/maps/place/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A1%E0%B8%87%E0%B8%84%E0%B8%A5%E0%B8%98%E0%B8%B1%E0%B8%8D%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5/@14.0380382,100.727676,18z/data=!4m10!1m2!2m1!1srmutt!3m6!1s0x311d78a4a8713c3f:0xf019238243532a0!8m2!3d14.0366133!4d100.7279332!15sCgVybXV0dCIDiAEBWgciBXJtdXR0kgERcHVibGljX3VuaXZlcnNpdHngAQA!16s%2Fm%2F09g8jll?hl=th&entry=ttu" target="_blank">ที่อยู่</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>ติดต่อพวกเรา</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/Bus.rmutt"target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/pr_rmutt"target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/rmutt.official/"target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+ <p class="mt-5 mb-3 text-muted" style="text-align: center; color: #7a7a7a;">&copy;2022-2024 Aew neur kan ter</p>
+</footer>
+</body>
+</html>

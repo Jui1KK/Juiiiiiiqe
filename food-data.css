@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Itim
+}
+/*----------------- VARIABLES --------------------*/
+:root{
+  /* COLORS */
+  --color: #0C3400;
+  --second-color: #FFDE59;
+}
+
+ul,
+li,
+a{
+  text-decoration: none;
+  list-style: none;
+}
+
+/*----------------- NAV -------------------------*/
+.nav{
+  background-color: var(--color);
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0,0,0, .1);
+
+}
+
+.nav__logo{
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 0.5em;
+  
+}
+
+.nav__hamburger{
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 0.5em;
+
+}
+
+.nav__links{
+  position: fixed;
+  top: 5rem;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0, .5);
+  padding-top: 2em;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  transition: all .4s ease-out;
+}
+
+.nav__link{
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+
+.nav__link a{
+  color: #fff;
+}
+
+.nav__link a:hover{
+  cursor: pointer;
+  color: var(--second-color);
+}
+
+#check:checked ~ .nav__links{
+  right: 0;
+}
+
+#check{
+  display: none;
+}
+
+
+/* ---------------- MEDIA ----------------------- */
+@media (min-width: 768px){
+
+  .nav{
+    height: 8rem;
+  }
+
+  .nav__logo{
+    font-size: 2.5rem;
+  }
+
+  .nav__links{
+    position: static;
+    background-color: transparent;
+    max-width: 50%;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    transition: none;
+  }
+
+  .nav__hamburger{
+    display: none;
+  }
+
+  .nav__link{
+    margin-right: 0.75em;
+  }
+
+  .nav__link a{
+    font-size: 1.25rem;
+    padding: 0.4em;
+    border-radius: 1em;
+    transition: all .3s ease;
+  }
+
+  .nav__link:hover a{
+    background-color: #fff;
+    color: var(--color);
+  }
+}
+
+@media (min-width: 1024px){
+
+  .nav__logo{
+    font-size: 3rem;
+  }
+
+  .nav__link a{
+    font-size: 1.4rem;
+  }
+}
+  .search_container { /* ความยาวช่องค้นหา*/
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .search-input { /* ช่องค้นหา*/
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #0a8f08;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .search-button { /* ปุ่มค้นหา*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #72d572;
+    cursor: pointer;
+  }
+  
+  .search-button i {
+    color: #666;
+    font-size: 20px;
+  }
+  
+  .search-button:hover {
+    background-color: #ffca28;
+  }
+  /*แว่นขยาย*/
+
+  /*รอใส่ css ข้อมูล*/
+  /*ภาพสไล*/
+  .slideshow {
+    position: relative;
+    max-width: 2000px;
+    max-height: 400px;
+    margin: 0 auto;
+    margin-top: 00px;
+    z-index: 1;
+
+  }
+  .items {
+    max-width: 2000px;
+    max-height: 400px;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  .items img {
+    width: 2000px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .slideshow .slick-prev{
+    position: absolute;
+    top:  180px;
+    left: 20px;
+    z-index: 10;
+  }
+  .slideshow .slick-next{
+    position: absolute;
+    top:  180px;
+    right: 20px;
+    z-index: 10;
+  }
+  .slideshow .slick-arrow {
+    z-index: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+  }
+  .slideshow .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .slideshow .slick-dots li {
+    list-style: none;
+    margin: 0 2px;
+    width: 10px;
+    height: 10px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  .slideshow .slick-active {
+    background: red  !important;
+  }
+/*ภาพสไล*/
+  .box_background {
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .container {
+    width: 70%; /* กำหนดความกว้างของ container */
+    margin: auto; /* จัดให้อยู่กึ่งกลางหน้าจอ */
+    background-color: #fff; /* สีพื้นหลัง container */
+    padding: 20px; /* เพิ่มระยะขอบของ container */
+    border-radius: 8px; /* ทำให้มีเส้นโค้งบริเวณขอบ container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาใต้ container */
+    
+}
+  .container h1 {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+  .eiei { 
+    text-align: center;
+  }
+  .auto-wrap {
+    word-wrap: break-word;
+  }
+  .maps{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+  h2 {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  /*รอใส่ css ข้อมูล*/
+
+  /****************************footer***********************/
+
+.container1{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{ /*เส้นกำหนดขอบเขต*/
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  ul{
+    list-style: none;
+    font-size: 20px;
+    margin-right: -10px;
+  }
+  .footer{
+    background-color: #0C3400;
+      padding: 60px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+     
+  }
+  p1{
+    font-size: 20px;
+    color: white;
+    
+  }
+  .footer-col h4{
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    border: 1px solid rgb(255, 0, 0);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    height: 1px;
+    box-sizing: border-box;
+    width: 70px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 5px;
+  }
+  .footer-col ul li a{ /*Contact*/
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300px;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{ /*Contact*/
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /* Responsive */
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .content {
+    width: 90%; /* ปรับขนาดเนื้อหาให้ไม่ใหญ่เกินไปในหน้าจอขนาดเล็ก */
+    top: 50%; /* ปรับตำแหน่ง content ให้อยู่กลางในหน้าจอขนาดเล็ก */
+    left: 50%; /* ปรับตำแหน่ง content ให้อยู่กลางในหน้าจอขนาดเล็ก */
+    transform: translate(-50%, -50%); /* ปรับตำแหน่ง content ให้อยู่กลางในหน้าจอขนาดเล็ก */
+  }
+}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+  .content {
+    width: 95%; /* ปรับขนาดเนื้อหาให้ไม่ใหญ่เกินไปในหน้าจอขนาดเล็ก */
+  }
+}
